@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'About the Author & Journal',
+  title: 'About the Author & Publication',
   description:
-    'About Syed Mohammad Hamzah, a 3rd-year B.Tech Computer Science and Engineering student exploring programming, Data Science, Artificial Intelligence, and preparation for GATE DA 2027.',
+    'About Syed Mohammad Hamzah and Beyond the Algorithm — an independent technology blog exploring Data Science, Artificial Intelligence, Machine Learning and programming.',
 };
 
 export default function AboutPage() {
@@ -13,7 +13,7 @@ export default function AboutPage() {
         <div className="about-badge">Background &amp; Purpose</div>
         <h1 className="about-title">About Syed Mohammad Hamzah</h1>
         <p className="about-tagline">
-          &ldquo;An engineering student documenting the journey from curiosity to code, data and intelligence.&rdquo;
+          &ldquo;Exploring Data, Artificial Intelligence, Machine Learning and the ideas behind them.&rdquo;
         </p>
       </header>
 
@@ -82,12 +82,12 @@ export default function AboutPage() {
         </section>
 
         <section className="about-section">
-          <h2>Why &ldquo;Learning in Progress&rdquo;?</h2>
+          <h2>Why &ldquo;Beyond the Algorithm&rdquo;?</h2>
           <p>
-            The name of this website is a deliberate philosophy. In software engineering, progress is rarely linear. You spend hours tracing a memory leak or deriving a loss function, only to discover a basic arithmetic error on line three.
+            The name of this publication reflects a deliberate philosophy. In computer science and modern artificial intelligence, an algorithm is never just lines of code or an API call. Behind every algorithm lies mathematical structure, human assumptions, empirical data, and real-world consequences.
           </p>
           <p>
-            Writing articles forces me to test my understanding. If I cannot explain a concept clearly in plain prose, with working code and rigorous mathematical notation, it means I have not truly understood it. Every article published here is a commitment to clarity.
+            Writing articles forces me to explore what happens beyond the surface syntax. If I cannot explain a concept clearly in plain prose, with working code and rigorous mathematical notation, it means I have not truly understood it. <em>Beyond the Algorithm</em> is an ongoing commitment to depth, technical honesty, and genuine learning.
           </p>
         </section>
 

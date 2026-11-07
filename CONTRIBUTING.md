@@ -1,11 +1,11 @@
 # Contributing Guidelines
 
-Thank you for your interest in contributing to *Learning in Progress*!
+Thank you for your interest in contributing to *Beyond the Algorithm*!
 
-Because this is a personal engineering journal by Syed Mohammad Hamzah, external contributions usually focus on:
+Because this is an independent technology publication by Syed Mohammad Hamzah, external contributions usually focus on:
 1. Fixing typos, grammatical issues, or broken links in published articles.
 2. Correcting technical errata or mathematical inaccuracies in derivations.
-3. Suggesting accessibility or performance improvements to the Astro codebase.
+3. Suggesting accessibility or performance improvements to the Next.js codebase.
 
 ---
 
@@ -22,7 +22,6 @@ Because this is a personal engineering journal by Syed Mohammad Hamzah, external
    ```
 4. **Run Quality Checks:**
    ```bash
-   npx astro check
    npm run build
    ```
 5. **Open a Pull Request:** Describe the correction clearly, citing standard references or textbooks if resolving a mathematical discrepancy.

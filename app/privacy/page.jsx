@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Privacy Policy',
   description:
-    'Privacy policy and transparency statement for Learning in Progress by Syed Mohammad Hamzah.',
+    'Privacy policy and transparency statement for Beyond the Algorithm by Syed Mohammad Hamzah.',
 };
 
 export default function PrivacyPage() {
@@ -15,12 +15,12 @@ export default function PrivacyPage() {
 
       <div className="privacy-content">
         <p className="lead-text">
-          Welcome to <em>Learning in Progress</em>. Your privacy is respected. This Privacy Policy details the types of information that may be gathered when you browse this personal publication, and how that information is handled.
+          Welcome to <em>Beyond the Algorithm</em>. Your privacy is respected. This Privacy Policy details the types of information that may be gathered when you browse this personal publication, and how that information is handled.
         </p>
 
         <h2>1. Overview of the Website</h2>
         <p>
-          <em>Learning in Progress</em> is an independent personal educational blog maintained by <strong>Syed Mohammad Hamzah</strong>, a student pursuing a B.Tech in Computer Science and Engineering. The primary purpose of this website is to publish technical articles, personal reflections, and study materials regarding computer science, data science, artificial intelligence, and engineering education.
+          <em>Beyond the Algorithm</em> is an independent personal educational blog maintained by <strong>Syed Mohammad Hamzah</strong>, a student pursuing a B.Tech in Computer Science and Engineering. The primary purpose of this website is to publish technical articles, personal reflections, and study materials regarding computer science, data science, artificial intelligence, and engineering education.
         </p>
 
         <h2>2. Information We Do Not Collect</h2>
@@ -80,7 +80,7 @@ export default function PrivacyPage() {
         <div className="contact-box">
           <p><strong>Syed Mohammad Hamzah</strong></p>
           <p>Email: <a href="mailto:mohdhamzah1308@gmail.com">mohdhamzah1308@gmail.com</a></p>
-          <p>Publication: <em>Learning in Progress</em></p>
+          <p>Publication: <em>Beyond the Algorithm</em></p>
         </div>
       </div>
     </div>

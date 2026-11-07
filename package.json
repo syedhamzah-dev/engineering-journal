@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Learning in Progress - Personal Technology Journal by Syed Mohammad Hamzah",
+  "description": "Beyond the Algorithm - Independent Technology Publication by Syed Mohammad Hamzah",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

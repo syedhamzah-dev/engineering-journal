@@ -10,12 +10,12 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Col 1: Brand & Philosophy */}
           <div className="footer-col col-brand">
-            <h3 className="footer-brand-title">Learning in Progress</h3>
+            <h3 className="footer-brand-title">Beyond the Algorithm</h3>
             <p className="footer-tagline">
-              &ldquo;An engineering student documenting the journey from curiosity to code, data and intelligence.&rdquo;
+              &ldquo;Exploring Data, Artificial Intelligence, Machine Learning and the ideas behind them.&rdquo;
             </p>
             <p className="footer-note">
-              An independent personal publication by Syed Mohammad Hamzah, a 3rd-year B.Tech Computer Science student. Focusing on honest learning, technical depth, real experiments, and preparation for GATE DA 2027.
+              An independent technology publication by Syed Mohammad Hamzah. Documenting concepts, projects, experiments, and technical foundations in Data Science, Artificial Intelligence, Machine Learning, and programming.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export default function Footer() {
         {/* Bottom hairline */}
         <div className="footer-bottom">
           <p className="copyright">
-            &copy; {currentYear} Syed Mohammad Hamzah. Built with Next.js &amp; React. Designed for clarity, performance, and longevity.
+            &copy; {currentYear} Syed Mohammad Hamzah &bull; Beyond the Algorithm. Built with Next.js &amp; React. Designed for clarity, performance, and longevity.
           </p>
           <div className="bottom-links">
             <a href="#top" className="back-to-top">

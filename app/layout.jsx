@@ -4,11 +4,11 @@ import './globals.css';
 
 export const metadata = {
   title: {
-    default: 'Learning in Progress | Personal Technology Blog',
-    template: '%s — Learning in Progress',
+    default: 'Beyond the Algorithm | Technology Publication',
+    template: '%s — Beyond the Algorithm',
   },
   description:
-    'An engineering student documenting the journey from curiosity to code, data and intelligence. Articles on Data Science, AI, Machine Learning, and programming by Syed Mohammad Hamzah.',
+    'An independent technology blog documenting concepts, projects, experiments and learning in Data Science, Artificial Intelligence, Machine Learning and programming by Syed Mohammad Hamzah.',
   metadataBase: new URL('https://engineering-journal.pages.dev'),
   alternates: {
     types: {
@@ -19,26 +19,26 @@ export const metadata = {
     icon: '/favicon.svg',
   },
   openGraph: {
-    title: 'Learning in Progress | Personal Technology Blog',
+    title: 'Beyond the Algorithm | Technology Publication',
     description:
-      'An engineering student documenting the journey from curiosity to code, data and intelligence.',
+      'Exploring Data, Artificial Intelligence, Machine Learning and the ideas behind them.',
     url: 'https://engineering-journal.pages.dev',
-    siteName: 'Learning in Progress',
+    siteName: 'Beyond the Algorithm',
     images: [
       {
         url: '/images/og-default.svg',
         width: 1200,
         height: 630,
-        alt: 'Learning in Progress by Syed Mohammad Hamzah',
+        alt: 'Beyond the Algorithm by Syed Mohammad Hamzah',
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Learning in Progress | Personal Technology Blog',
+    title: 'Beyond the Algorithm | Technology Publication',
     description:
-      'An engineering student documenting the journey from curiosity to code, data and intelligence.',
+      'Exploring Data, Artificial Intelligence, Machine Learning and the ideas behind them.',
     images: ['/images/og-default.svg'],
   },
 };

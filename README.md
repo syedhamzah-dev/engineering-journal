@@ -1,6 +1,6 @@
-# Learning in Progress — Personal Technology Journal
+# Beyond the Algorithm — Independent Technology Publication
 
-> *"An engineering student documenting the journey from curiosity to code, data, and intelligence."*
+> *"Exploring Data, Artificial Intelligence, Machine Learning and the ideas behind them."*
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.5-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.0-61dafb?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
@@ -14,7 +14,7 @@
 ## Quick Navigation
 
 - [Project Overview](#-project-overview)
-- [Why This Journal Exists](#-why-this-journal-exists)
+- [Why This Publication Exists](#-why-this-publication-exists)
 - [Key Features](#-key-features)
 - [Technology Stack](#-technology-stack)
 - [Architecture & Directory Structure](#-architecture--directory-structure)
@@ -31,19 +31,19 @@
 
 | Attribute | Details |
 | :--- | :--- |
-| **Publication** | **Learning in Progress** |
+| **Publication** | **Beyond the Algorithm** |
 | **Author** | **Syed Mohammad Hamzah** (3rd-Year B.Tech CSE, Integral University, Lucknow) |
 | **Target Exam** | **GATE Data Science & Artificial Intelligence (DA) 2027** |
 | **Architecture** | Next.js 15 App Router &bull; Static Site Generation (SSG) &bull; React 19 |
 | **Design Language** | Editorial parchment (`#fbfaf6`), deep charcoal (`#1d2125`), muted forest green (`#28543e`) |
 | **Repository** | [`syedhamzah-dev/engineering-journal`](https://github.com/syedhamzah-dev/engineering-journal) |
-| **Live Demo** | Deployable on [Vercel](https://vercel.com/) / Cloudflare Pages |
+| **Live Demo** | Deployable on [Vercel](https://vercel.com/) (`beyond-the-algorithm`) / Cloudflare Pages |
 
-*Learning in Progress* is a custom, editorial-grade personal blogging platform and digital laboratory journal. Built from the ground up without heavy templates or utility frameworks, it chronicles the unfiltered process of learning computer science, programming, Data Science, and Machine Learning from first principles.
+*Beyond the Algorithm* is an independent personal technology publication documenting concepts, projects, experiments, and technical foundations in Data Science, Artificial Intelligence, Machine Learning, and programming. Built from the ground up without heavy templates or utility frameworks, it chronicles the unfiltered process of understanding computing and intelligence from first principles.
 
 ---
 
-## 🎯 Why This Journal Exists
+## 🎯 Why This Publication Exists
 
 In modern computer science education, there is a strong temptation toward passive tutorial consumption and collecting online certificates without achieving true conceptual depth. 
 

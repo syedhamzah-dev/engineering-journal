@@ -3,7 +3,7 @@ title: "Why I Started This Blog: My Engineering Journey"
 description: "Why I decided to document my journey as a 3rd-year B.Tech CSE student at Integral University, Lucknow, exploring programming, Data Science, AI, and GATE DA 2027."
 pubDate: "2025-10-10"
 category: "My Engineering Journey"
-tags: ["engineering", "journal", "learning-in-progress", "reflections", "integral-university"]
+tags: ["engineering", "journal", "beyond-the-algorithm", "reflections", "integral-university"]
 draft: false
 author: "Syed Mohammad Hamzah"
 ---
@@ -14,7 +14,7 @@ Over the first two and a half years of my B.Tech, that curiosity led me down sev
 
 Along the way, I noticed a recurring problem in how students approach tech education: **we often consume massive amounts of information without taking the time to synthesize what we actually understand.**
 
-This blog—*Learning in Progress*—is my attempt to change that habit.
+This publication—*Beyond the Algorithm*—is my attempt to change that habit.
 
 ---
 

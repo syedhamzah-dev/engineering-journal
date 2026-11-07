@@ -4,9 +4,9 @@ import { getAllPosts } from '../lib/posts.js';
 import { CATEGORIES } from '../lib/categories.js';
 
 export const metadata = {
-  title: 'Learning in Progress | Personal Technology Blog',
+  title: 'Beyond the Algorithm | Technology Publication',
   description:
-    'An engineering student documenting the journey from curiosity to code, data and intelligence. Articles on Data Science, AI, Machine Learning, and programming by Syed Mohammad Hamzah.',
+    'An independent technology blog documenting concepts, projects, experiments and learning in Data Science, Artificial Intelligence, Machine Learning and programming by Syed Mohammad Hamzah.',
 };
 
 export default function HomePage() {
@@ -19,19 +19,19 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="hero-section container">
         <div className="hero-inner">
-          <div className="hero-badge">Personal Journal &bull; 3rd Year B.Tech CSE</div>
+          <div className="hero-badge">Independent Technology Publication &bull; By Syed Mohammad Hamzah</div>
           <h1 className="hero-title">
-            Documenting the journey from curiosity to code, data and intelligence.
+            Exploring Data, Artificial Intelligence, Machine Learning and the ideas behind them.
           </h1>
           <p className="hero-description">
-            Welcome to <em>Learning in Progress</em>. I am <strong>Syed Mohammad Hamzah</strong>, a third-year Computer Science and Engineering student. This website is an independent personal publication where I document my hands-on experiments, conceptual breakthroughs, mistakes, and preparation for GATE DA 2027.
+            Welcome to <strong>Beyond the Algorithm</strong>. An independent publication by <strong>Syed Mohammad Hamzah</strong> documenting concepts, projects, experiments, and technical foundations in Data Science, Artificial Intelligence, Machine Learning, and software engineering.
           </p>
           <div className="hero-actions">
             <Link href="/blog" className="btn btn-primary">
               Browse All Articles &rarr;
             </Link>
             <Link href="/about" className="btn btn-outline">
-              About My Journey
+              About the Publication
             </Link>
           </div>
         </div>
@@ -106,17 +106,17 @@ export default function HomePage() {
       <section className="about-preview-section">
         <div className="container container-narrow">
           <div className="about-card">
-            <div className="about-card-badge">The Philosophy Behind This Blog</div>
-            <h2 className="about-card-title">Why an honest, public engineering journal?</h2>
+            <div className="about-card-badge">Editorial Philosophy</div>
+            <h2 className="about-card-title">Why Beyond the Algorithm?</h2>
             <p>
-              Too much of technology media is optimized for shallow buzzwords and fabricated expertise. As a student entering the critical second half of my undergraduate studies, I wanted a forum that values depth, intellectual honesty, and the actual learning struggle.
+              Too much of technology media is optimized for superficial buzzwords, marketing hype, and copy-pasted tutorials. <strong>Beyond the Algorithm</strong> is dedicated to examining what lies beneath the surface—exploring mathematical foundations, analyzing messy real-world data, building functional software, and documenting technical experiments with intellectual honesty.
             </p>
             <p>
-              Whether analyzing high-dimensional vector spaces in Linear Algebra, building Python pipelines for data analytics, or breaking down loss functions in Machine Learning, every article here is written with one goal: <strong>understanding from first principles</strong>.
+              From linear algebra in high-dimensional vector spaces and statistical learning theory to practical Python pipelines, hackathon post-mortems, and preparation for GATE DA 2027, every article published here focuses on <strong>understanding from first principles</strong>.
             </p>
             <div className="about-card-footer">
               <Link href="/about" className="btn btn-outline">
-                Read my full background &rarr;
+                About the Publication &rarr;
               </Link>
               <a
                 href="https://github.com/syedhamzah-dev"

@@ -23,8 +23,8 @@ export default function Header() {
       <div className="container header-inner">
         <div className="brand">
           <Link href="/" className="brand-link" onClick={closeMenu}>
-            <span className="brand-title">Learning in Progress</span>
-            <span className="brand-subtitle">Engineering, Data &amp; Intelligence</span>
+            <span className="brand-title">Beyond the Algorithm</span>
+            <span className="brand-subtitle">Data, AI &amp; Computing</span>
           </Link>
         </div>
 
