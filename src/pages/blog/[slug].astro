@@ -1,0 +1,68 @@
+---
+import { getCollection, render } from 'astro:content';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import { getReadingTime } from '../../utils/readingTime';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  // Sort chronologically ascending for prev/next
+  const sorted = [...posts].sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+
+  return sorted.map((post, index) => {
+    const slug = post.id.replace(/\.[^/.]+$/, '');
+    
+    const prevPost = index > 0 ? {
+      title: sorted[index - 1].data.title,
+      slug: sorted[index - 1].id.replace(/\.[^/.]+$/, '')
+    } : undefined;
+
+    const nextPost = index < sorted.length - 1 ? {
+      title: sorted[index + 1].data.title,
+      slug: sorted[index + 1].id.replace(/\.[^/.]+$/, '')
+    } : undefined;
+
+    const relatedPosts = sorted
+      .filter((p) => p.id !== post.id && p.data.category === post.data.category)
+      .slice(0, 2)
+      .map((p) => ({
+        title: p.data.title,
+        description: p.data.description,
+        slug: p.id.replace(/\.[^/.]+$/, ''),
+        pubDate: p.data.pubDate,
+        readingTime: getReadingTime(p.body || ''),
+      }));
+
+    return {
+      params: { slug },
+      props: {
+        post,
+        prevPost,
+        nextPost,
+        relatedPosts,
+      },
+    };
+  });
+}
+
+const { post, prevPost, nextPost, relatedPosts } = Astro.props;
+const { Content, headings } = await render(post);
+const readingTime = getReadingTime(post.body || '');
+---
+
+<ArticleLayout
+  title={post.data.title}
+  description={post.data.description}
+  pubDate={post.data.pubDate}
+  updatedDate={post.data.updatedDate}
+  category={post.data.category}
+  tags={post.data.tags}
+  author={post.data.author}
+  readingTime={readingTime}
+  headings={headings}
+  prevPost={prevPost}
+  nextPost={nextPost}
+  relatedPosts={relatedPosts}
+>
+  <Content />
+</ArticleLayout>
+

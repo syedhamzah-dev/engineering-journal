@@ -1,0 +1,168 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Privacy Policy | Learning in Progress"
+  description="Privacy policy and data protection transparency for Learning in Progress by Syed Mohammad Hamzah."
+>
+  <div class="container container-narrow privacy-page">
+    <header class="privacy-header">
+      <div class="privacy-badge">Legal & Transparency</div>
+      <h1 class="privacy-title">Privacy Policy</h1>
+      <p class="privacy-meta">Last updated: October 2025 &bull; Effective immediately</p>
+    </header>
+
+    <div class="privacy-content">
+      <p class="lead-text">
+        Welcome to <em>Learning in Progress</em> (accessible at <code>engineering-journal.pages.dev</code>). Your privacy is respected. This Privacy Policy details the types of information that may be gathered when you browse this personal publication, and how that information is handled.
+      </p>
+
+      <h2>1. Overview of the Website</h2>
+      <p>
+        <em>Learning in Progress</em> is an independent personal educational blog maintained by <strong>Syed Mohammad Hamzah</strong>, a student pursuing a B.Tech in Computer Science and Engineering. The primary purpose of this website is to publish technical articles, personal reflections, and study materials regarding computer science, data science, artificial intelligence, and engineering education.
+      </p>
+
+      <h2>2. Information We Do Not Collect</h2>
+      <p>
+        This website does not require account creation, registration, or login. We do not maintain a database of personal accounts, passwords, or payment credentials.
+      </p>
+
+      <h2>3. Log Files and Web Hosting</h2>
+      <p>
+        Like most websites hosted on global cloud infrastructure (such as Cloudflare Pages), standard server access logs may be collected automatically by the hosting infrastructure. These logs may include:
+      </p>
+      <ul>
+        <li>Internet Protocol (IP) addresses (anonymized where possible)</li>
+        <li>Browser type and version</li>
+        <li>Referring and exit pages</li>
+        <li>Date and time stamps</li>
+        <li>Pages viewed</li>
+      </ul>
+      <p>
+        This data is used exclusively for site maintenance, bandwidth diagnostics, network security, and preventing malicious DDoS attacks. It is not linked to personally identifiable individual profiles.
+      </p>
+
+      <h2>4. Cookies and Web Analytics</h2>
+      <p>
+        Currently, this website operates with minimal cookies strictly necessary for core performance and hosting security.
+      </p>
+      <p>
+        In the future, privacy-respecting analytics (such as Google Analytics or Cloudflare Web Analytics) may be utilized to evaluate aggregate metrics—such as which articles are most read and general geographic readership distribution. Such tools use standard anonymized cookies to track aggregate trends. You can disable cookies at any time via your browser settings without impacting your ability to read any article on this website.
+      </p>
+
+      <h2>5. Future Advertising & Google AdSense Readiness</h2>
+      <p>
+        This website is structured to comply with Google AdSense quality and transparency guidelines. When advertising is enabled in the future:
+      </p>
+      <ul>
+        <li>Third-party vendors, including Google, may use cookies (such as the DoubleClick cookie) to serve relevant advertisements based on a user’s prior visits to this or other websites.</li>
+        <li>Users may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a> or through <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">AboutAds.info</a>.</li>
+        <li>We will never engage in misleading click prompts, intrusive popups, or deceptive ad placement.</li>
+      </ul>
+
+      <h2>6. External Links</h2>
+      <p>
+        Articles on this website frequently link to external sources, such as official Python documentation, research papers, GitHub repositories, and educational platforms. We have no control over the privacy policies or practices of external websites and encourage readers to review their independent privacy terms.
+      </p>
+
+      <h2>7. Children's Privacy</h2>
+      <p>
+        This website does not knowingly collect any personally identifiable information from children under the age of 13.
+      </p>
+
+      <h2>8. Changes to This Privacy Policy</h2>
+      <p>
+        This Privacy Policy may be updated periodically to reflect changes in site functionality or legal compliance. Any updates will be reflected on this page with a revised "Last updated" date.
+      </p>
+
+      <h2>9. Contact for Privacy Inquiries</h2>
+      <p>
+        If you have any questions, comments, or concerns regarding this Privacy Policy, please contact:
+      </p>
+      <div class="contact-box">
+        <p><strong>Syed Mohammad Hamzah</strong></p>
+        <p>Email: <a href="mailto:mohdhamzah1308@gmail.com">mohdhamzah1308@gmail.com</a></p>
+        <p>Publication: <em>Learning in Progress</em></p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .privacy-page {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .privacy-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .privacy-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-base);
+    margin-bottom: 0.5rem;
+  }
+
+  .privacy-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .privacy-meta {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0;
+  }
+
+  .privacy-content {
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  .lead-text {
+    font-size: 1.12rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+
+  .privacy-content h2 {
+    font-size: 1.45rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 0.35rem;
+  }
+
+  .privacy-content ul {
+    margin: 1rem 0 1.5rem 1.5rem;
+  }
+
+  .privacy-content li {
+    margin-bottom: 0.4rem;
+  }
+
+  .contact-box {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .contact-box p {
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+  }
+
+  .contact-box p:last-child {
+    margin-bottom: 0;
+  }
+</style>
+

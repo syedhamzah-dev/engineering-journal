@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Page Not Found (404) | Learning in Progress"
+  description="The requested page could not be found."
+>
+  <div class="container container-narrow error-page">
+    <div class="error-badge">404 Error</div>
+    <h1 class="error-title">Page Not Found</h1>
+    <p class="error-lead">
+      The article or page you are looking for does not exist, has been moved, or the URL was mistyped.
+    </p>
+
+    <div class="error-box">
+      <h3>Looking for something specific?</h3>
+      <p>Here are a few places to continue reading:</p>
+      <ul class="error-links">
+        <li><a href="/">&larr; Return to Homepage</a></li>
+        <li><a href="/blog">Browse All Articles</a></li>
+        <li><a href="/about">About the Author</a></li>
+        <li><a href="/contact">Report a Broken Link</a></li>
+      </ul>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .error-page {
+    padding-top: 4.5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+
+  .error-badge {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-base);
+    background-color: var(--accent-subtle);
+    border: 1px solid var(--accent-border);
+    padding: 0.25rem 0.65rem;
+    border-radius: 3px;
+    margin-bottom: 1.25rem;
+  }
+
+  .error-title {
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .error-lead {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    max-width: 580px;
+    margin: 0 auto 2.5rem;
+  }
+
+  .error-box {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    padding: 2rem;
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .error-box h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    font-family: var(--font-sans);
+    font-weight: 600;
+  }
+
+  .error-box p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+
+  .error-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .error-links a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--accent-base);
+    text-decoration: none;
+  }
+
+  .error-links a:hover {
+    text-decoration: underline;
+  }
+</style>
+
