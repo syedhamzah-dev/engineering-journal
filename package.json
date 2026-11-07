@@ -2,23 +2,20 @@
   "name": "engineering-journal",
   "version": "1.0.0",
   "private": true,
-  "description": "Learning in Progress - Personal Technology Journal by Syed Mohammad Hamzah",
   "type": "module",
+  "description": "Learning in Progress - Personal Technology Journal by Syed Mohammad Hamzah",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^4.1.0",
-    "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.2.1",
-    "astro": "^5.4.2",
-    "rehype-katex": "^7.0.1",
-    "remark-math": "^6.0.0",
-    "typescript": "^5.7.3"
+    "gray-matter": "^4.0.3",
+    "next": "^15.1.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remark": "^15.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-html": "^16.0.1"
   }
 }

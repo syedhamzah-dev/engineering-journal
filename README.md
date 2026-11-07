@@ -2,162 +2,168 @@
 
 > *"An engineering student documenting the journey from curiosity to code, data and intelligence."*
 
-An independent, editorial-grade personal blogging platform custom-crafted from scratch for **Syed Mohammad Hamzah**, a 3rd-year B.Tech Computer Science & Engineering student. 
+An independent, editorial-grade personal blogging platform custom-crafted for **Syed Mohammad Hamzah**, a third-year B.Tech Computer Science and Engineering student. 
 
-This website documents hands-on explorations, algorithmic breakthroughs, practical mistakes, data investigations, and structured academic preparations for the **GATE Data Science and Artificial Intelligence (DA) 2027** examination.
-
----
-
-## 1. Project Overview & Philosophy
-
-Unlike generic technology news portals or AI-generated card dashboards, *Learning in Progress* is designed to evoke a carefully typeset, independent intellectual journal.
-
-- **Authentic Learning in Public:** Honest reflections and technical deep-dives rather than exaggerated expert personas.
-- **Zero-Budget Architecture (₹0):** Custom-coded using modern static site generation with free-tier hosting on Cloudflare Pages.
-- **Privacy & AdSense Ready:** Clean navigation, comprehensive privacy policy, direct contact channels, and zero intrusive ads.
+This website documents hands-on explorations, algorithmic breakdowns, practical mistakes, data investigations, and structured academic preparation for the **GATE Data Science and Artificial Intelligence (DA) 2027** examination.
 
 ---
 
-## 2. Technology Stack
+## 1. Project Overview
 
-| Layer | Technology | Rationale |
-| :--- | :--- | :--- |
-| **Framework** | [Astro 5](https://astro.build/) | Industry-leading static site generator (SSG) with zero runtime JavaScript overhead for content pages. |
-| **Language** | [TypeScript](https://www.typescriptlang.org/) | Strict compile-time type validation across content schemas, navigation, and utilities. |
-| **Content Layer** | Markdown & [MDX](https://mdxjs.com/) | Structured Content Collections with runtime Zod schema validation. |
-| **Styling** | Custom CSS3 Design System | Responsive custom properties, editorial serif headings, and charcoal/sage color palette. |
-| **Hosting** | [Cloudflare Pages](https://pages.cloudflare.com/) | High-speed global edge network, automated Git CI/CD, unlimited bandwidth on free tier. |
-| **SEO & Feeds** | `@astrojs/sitemap` & `@astrojs/rss` | Automated XML sitemap generation, RSS 2.0 syndication, and schema.org JSON-LD metadata. |
+*Learning in Progress* is a custom personal technology publication built to move beyond superficial tutorials and generic tech news. It acts as an open laboratory notebook where the author records the unfiltered reality of learning complex computer science disciplines from first principles.
+
+The website is engineered with a modern editorial aesthetic: warm off-white backgrounds, dark charcoal typography, muted forest green accents, generous whitespace, and responsive layouts designed for reading long-form technical prose comfortably.
 
 ---
 
-## 3. Key Features
+## 2. Motivation
 
-- **Editorial Design System:** Warm off-white background (`#fbfaf6`), deep charcoal typography (`#1d2125`), and muted forest green accents (`#28543e`).
-- **Dynamic Table of Contents:** Automatically parses `h2` and `h3` heading anchors with smooth navigation.
-- **Reading Progress Bar:** Hairline fixed scroll progress indicator at the top of article layouts.
-- **Estimated Reading Time:** Dynamic word count calculation (200 words/min) executed during build time.
-- **Category & Tag Taxonomy:** 7 core engineering categories with dedicated archive pages and related article recommendations.
-- **Adjacent Post Navigation:** Dynamic previous/next article cards connecting your chronological writing timeline.
-- **Interactive Social Sharing:** One-click sharing to X (Twitter), LinkedIn, Reddit, and instant clipboard copy.
-- **Strict Draft Filtering:** Any article with `draft: true` is strictly filtered out from the production build, listings, RSS feed, and sitemap.
-- **Mobile Responsive Drawer Menu:** Pure, accessible navigation that adapts smoothly from desktop to mobile screens.
-- **Built-in Monetization Readiness:** Includes an `AdSlot.astro` placeholder component configured for future Google AdSense integration upon traffic maturation.
+In computer science education, there is an overwhelming incentive toward passive consumption and performative expertise. The purpose of this journal is:
+
+1. **Active Synthesis:** Explaining technical concepts—from vector projections in Linear Algebra to cost functions in Machine Learning—to test genuine understanding.
+2. **Honest Engineering Records:** Documenting real bugs, debugging methodologies, design choices, and post-mortems of student projects.
+3. **Structured Examination Preparation:** Serving as a transparent accountability log for multi-semester preparation toward the **GATE DA 2027** examination.
+4. **Independent Personal Brand:** Building a self-owned, long-term technical identity uncoupled from third-party social algorithms.
 
 ---
 
-## 4. Directory Structure
+## 3. Features Implemented
+
+- **Modern Editorial Design:** Custom plain CSS styling with warm off-white background (`#fbfaf6`), dark charcoal typography (`#1d2125`), and muted forest green accents (`#28543e`).
+- **Dynamic Content Engine:** Local Markdown article loading with YAML frontmatter parsing via `gray-matter`.
+- **Instant Client-Side Search:** Real-time search filtering on the articles archive by title, description, or tag with zero page reloads.
+- **Category Taxonomy:** 7 dedicated engineering categories with dedicated archive pages and related article recommendations.
+- **Dynamic Table of Contents:** Automatic extraction of `h2` and `h3` heading anchors with in-page navigation.
+- **Reading Progress Indicator:** Hairline scroll progress bar fixed to the top of long-form articles.
+- **Estimated Reading Time:** Automated reading duration calculated at 200 words per minute.
+- **Adjacent Article Navigation:** Chronological previous and next article links connecting published posts.
+- **Interactive Code Copying:** One-click clipboard copy button on preformatted code blocks.
+- **Native Social Sharing:** Integrated links for X (Twitter), LinkedIn, Reddit, and clipboard URL copying.
+- **Strict Draft Filtering:** Articles marked with `draft: true` are completely excluded from public listings, static generation, search, and the sitemap.
+- **Accessible Mobile Navigation:** Responsive hamburger drawer menu designed with pure semantic HTML, CSS, and minimal React state.
+- **Technical SEO:** Native Next.js sitemap (`/sitemap.xml`), robots directives (`/robots.txt`), Open Graph metadata, Twitter card tags, and Schema.org `BlogPosting` structured data.
+- **RSS 2.0 Syndication:** Dynamic XML feed available at `/rss.xml`.
+- **Monetization Readiness:** Non-intrusive `AdSlot` component prepared for future Google AdSense integration once traffic matures.
+
+---
+
+## 4. Technology Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) (App Router, Version 15)
+- **Library:** [React](https://react.dev/) (Version 19)
+- **Language:** JavaScript (ES Modules, strictly no TypeScript)
+- **Markup:** HTML5 through JSX
+- **Styling:** Plain CSS3 (Custom CSS properties, semantic selectors, no utility frameworks)
+- **Content Parsing:** `gray-matter`, `remark`, `remark-html`, `remark-gfm`
+- **Version Control:** Git & GitHub
+
+---
+
+## 5. Project Structure
 
 ```text
 engineering-journal/
+├── app/
+│   ├── globals.css             # Design system variables, typography, and responsive styles
+│   ├── layout.jsx              # Root layout with metadata, Google Fonts, Header, and Footer
+│   ├── page.jsx                # Homepage (Hero, categories, featured post, recent posts)
+│   ├── not-found.jsx           # Custom 404 error page
+│   ├── sitemap.js              # Native Next.js sitemap generator (/sitemap.xml)
+│   ├── robots.js               # Native Next.js robots generator (/robots.txt)
+│   ├── about/
+│   │   └── page.jsx            # Author background and GATE DA preparation context
+│   ├── contact/
+│   │   └── page.jsx            # Direct channels and mailto inquiry form
+│   ├── privacy/
+│   │   └── page.jsx            # Privacy Policy (AdSense & compliance ready)
+│   ├── rss.xml/
+│   │   └── route.js            # RSS 2.0 XML route handler
+│   └── blog/
+│       ├── page.jsx            # Articles archive with interactive search and category filter
+│       ├── [slug]/
+│       │   └── page.jsx        # Dynamic article page (SSG, TOC, prev/next, related posts)
+│       └── category/
+│           └── [category]/
+│               └── page.jsx    # Dedicated category archive pages (SSG)
+├── components/
+│   ├── AdSlot.jsx              # Future Google AdSense placeholder container
+│   ├── ArticleCard.jsx         # Editorial article listing card
+│   ├── BlogListingClient.jsx   # Interactive search and filter client component
+│   ├── CategoryBadge.jsx       # Category badge linking to category archive
+│   ├── CopyCodeButton.jsx      # Progressive enhancement for code block copying
+│   ├── Footer.jsx              # Publication footer with brand philosophy and links
+│   ├── Header.jsx              # Responsive header and navigation drawer
+│   ├── ReadingProgressBar.jsx  # Fixed scroll progress indicator
+│   ├── ShareButtons.jsx        # Social sharing and copy link buttons
+│   └── TableOfContents.jsx     # Anchor links for h2/h3 headings
+├── content/
+│   └── blog/                   # Markdown (.md) article files
+├── lib/
+│   ├── categories.js           # 7 canonical domains, descriptions, and slugification
+│   ├── date.js                 # Editorial date formatting utilities
+│   ├── posts.js                # Markdown parser, frontmatter reader, draft filter, TOC
+│   └── readingTime.js          # Reading time estimator
 ├── public/
 │   ├── favicon.svg             # Custom SVG publication monogram
-│   ├── robots.txt              # Search engine crawler instructions & sitemap link
 │   └── images/
 │       └── og-default.svg      # High-resolution 1200x630 Open Graph preview
-├── src/
-│   ├── content/
-│   │   └── blog/               # Markdown article files
-│   ├── content.config.ts       # Astro 5 Content Collections Zod schema
-│   ├── components/
-│   │   ├── AdSlot.astro        # Google AdSense placeholder container
-│   │   ├── ArticleCard.astro   # Editorial article listing card
-│   │   ├── CategoryBadge.astro # Category badge with slug routing
-│   │   ├── Footer.astro        # Site footer with brand info and links
-│   │   ├── Header.astro        # Responsive navigation header and drawer
-│   │   ├── ReadingProgressBar.astro # Article scroll progress indicator
-│   │   ├── SeoHead.astro       # Open Graph, Twitter, and JSON-LD metadata
-│   │   ├── ShareButtons.astro  # Social sharing & copy link buttons
-│   │   └── TableOfContents.astro # Headings navigation
-│   ├── layouts/
-│   │   ├── BaseLayout.astro    # Common HTML scaffold and font links
-│   │   └── ArticleLayout.astro # Long-form editorial article layout
-│   ├── pages/
-│   │   ├── index.astro         # Homepage (Hero, categories, featured, latest)
-│   │   ├── about.astro         # Author background and GATE DA context
-│   │   ├── contact.astro       # Direct contact channels and message form
-│   │   ├── privacy.astro       # Privacy policy (AdSense requirement)
-│   │   ├── 404.astro           # Custom 404 error page
-│   │   ├── rss.xml.ts          # RSS 2.0 feed generator
-│   │   └── blog/
-│   │       ├── index.astro     # Chronological article archive
-│   │       ├── [slug].astro    # Dynamic individual article page
-│   │       └── category/
-│   │           └── [category].astro # Category archive views
-│   ├── styles/
-│   │   └── global.css          # Design system CSS variables and typography
-│   └── utils/
-│       ├── categories.ts       # Central category taxonomy & slugification
-│       ├── date.ts             # Formatting utilities for editorial dates
-│       └── readingTime.ts      # Reading time estimator
-├── astro.config.mjs            # Astro configuration with sitemap & MDX
+├── next.config.mjs             # Next.js configuration
 ├── package.json                # Project dependencies and npm scripts
-└── tsconfig.json               # Strict TypeScript configuration
+└── README.md                   # Project documentation
 ```
 
 ---
 
-## 5. Local Development & Build Commands
+## 6. Installation and Local Development
 
 ### Prerequisites
-- Node.js `v20.0.0` or later (tested on Node `v24.20.0`)
-- npm `v10.0.0` or later (tested on npm `12.0.1`)
+- Node.js `v20.0.0` or higher (tested on Node `v24.20.0`)
+- npm `v10.0.0` or higher (tested on npm `12.0.1`)
 - Git
 
-### Installation
+### Steps:
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/syedhamzah-dev/engineering-journal.git
+
+# 2. Navigate to the project directory
 cd engineering-journal
 
-# Install dependencies
+# 3. Install dependencies
 npm install
-```
 
-### Development Server
-```bash
+# 4. Start the development server
 npm run dev
 ```
-Open your browser to `http://localhost:4321` to see the live site with hot-module reloading.
 
-### Type Check & Production Build
-```bash
-# Type check all components and content collections
-npx astro check
-
-# Generate optimized static production files in /dist
-npm run build
-```
-
-### Preview Production Build
-```bash
-npm run preview
-```
+Open your browser and navigate to `http://localhost:3000` to view the website locally.
 
 ---
 
-## 6. How to Write and Publish an Article
+## 7. Creating a Blog Post
 
-Adding an article requires zero component edits. Simply create a new `.md` file inside `src/content/blog/`:
+Articles are stored as Markdown files inside the `content/blog/` directory. Adding an article requires zero component modifications.
 
-### Example: `src/content/blog/my-new-article.md`
+### Step-by-Step:
+1. Create a new file: `content/blog/your-article-slug.md`
+2. Add the required frontmatter metadata at the top:
 
 ```markdown
 ---
 title: "Understanding Eigenvalues and Eigenvectors in Machine Learning"
-description: "A geometric intuition behind matrix transformations and how PCA utilizes eigenvectors."
-pubDate: 2026-03-15
+description: "A geometric intuition behind matrix transformations and how Principal Component Analysis utilizes eigenvectors."
+pubDate: "2026-03-15"
 category: "Machine Learning"
 tags: ["linear-algebra", "pca", "math", "machine-learning"]
 draft: false
 author: "Syed Mohammad Hamzah"
 ---
 
-Your markdown content starts here.
+Your markdown article content begins here.
 
-## Heading 2 Example
+## 1. Geometric Intuition
 
-Write your paragraphs, code snippets, or mathematical formulas:
+Explain the concepts in plain text, with lists, blockquotes, or code blocks:
 
 ```python
 import numpy as np
@@ -169,8 +175,8 @@ print("Eigenvalues:", eigenvalues)
 ```
 ```
 
-### Supported Categories
-Always use one of the 7 standardized categories:
+### Supported Categories:
+Articles must be categorized under one of the 7 core domains:
 1. `My Engineering Journey`
 2. `Programming`
 3. `Data Science`
@@ -179,104 +185,72 @@ Always use one of the 7 standardized categories:
 6. `Projects and Experiments`
 7. `Career and Learning`
 
-### Draft Mode
-Set `draft: true` while working on an unfinished post. Draft articles are automatically omitted from production builds, RSS feeds, category archives, and sitemaps. When ready, switch to `draft: false`.
+### Draft Status:
+To keep an article private while writing, set `draft: true`. Draft articles are automatically excluded from the public blog listing, category archives, search index, and sitemap. To publish, set `draft: false`.
 
 ---
 
-## 7. Cloudflare Pages Deployment (100% Free)
+## 8. Build and Deployment
 
-Cloudflare Pages provides blazing-fast edge hosting with unlimited bandwidth and automated Git deployments at zero cost.
-
-### Step-by-Step Instructions:
-1. **Push your code to GitHub** (see Section 8 below).
-2. Log in to the [Cloudflare Dashboard](https://dash.cloudflare.com/) (sign up for free if you haven't).
-3. Navigate to **Workers & Pages** &rarr; **Create application** &rarr; **Pages** &rarr; **Connect to Git**.
-4. Select your `engineering-journal` repository.
-5. In the **Set up builds and deployments** screen:
-   - **Framework preset:** `Astro`
-   - **Build command:** `npm run build`
-   - **Build output directory:** `dist`
-   - **Environment variables:**
-     - `NODE_VERSION` = `24.20.0` (or `20`)
-     - `ASTRO_TELEMETRY_DISABLED` = `1`
-6. Click **Save and Deploy**.
-7. Cloudflare will automatically build the site and provide a free `*.pages.dev` domain (e.g., `https://engineering-journal.pages.dev`).
-
-### Free-Tier Capabilities & Limitations:
-- **Cost:** ₹0 ($0.00 / month forever).
-- **Bandwidth:** Unlimited.
-- **Builds:** 500 build runs per month (more than enough for daily publishing).
-- **Custom Domains:** Free SSL certificate and custom apex domain support (e.g., `yourname.com`).
-- **CDN:** Cloudflare's global anycast edge caching in 300+ cities worldwide.
-
----
-
-## 8. GitHub Push Instructions
-
-If you haven't yet connected your local repository to GitHub, follow these exact commands in your terminal:
+### Production Build Commands:
+To test and create an optimized production build locally:
 
 ```bash
-# 1. Ensure you are in the project folder
-cd "c:\Users\mohdh\Desktop\Projects\My Blog Website"
+# Build the production application
+npm run build
 
-# 2. Create a new public repository on GitHub named: engineering-journal
-# (Visit https://github.com/new and create "engineering-journal")
-
-# 3. Add the GitHub remote (replace with your GitHub URL)
-git remote add origin https://github.com/syedhamzah-dev/engineering-journal.git
-
-# 4. Set the branch to main and push
-git branch -M main
-git push -u origin main
+# Start the production server locally
+npm run start
 ```
 
----
+### Deploying to Vercel (Recommended):
+Because this project is built on Next.js, [Vercel](https://vercel.com/) provides zero-configuration, native edge hosting:
 
-## 9. Search Engine Optimization (SEO) & Verification
-
-The site is built with technical SEO baked in:
-- **Sitemap:** Automatically generated at `/sitemap-index.xml`.
-- **Robots.txt:** Configured at `/robots.txt` pointing crawlers to your sitemap.
-- **Canonical URLs:** Self-referencing canonical links prevent duplicate indexing.
-- **Structured Data:** Schema.org JSON-LD (`BlogPosting`, `WebSite`, `Person`) embedded in `<head>`.
-
-### Connecting Google Search Console:
-1. Go to [Google Search Console](https://search.google.com/search-console).
-2. Add your property URL (`https://engineering-journal.pages.dev` or custom domain).
-3. Choose the **HTML tag** verification method.
-4. Copy the verification code and paste it into `src/components/SeoHead.astro` in the verification hook line:
-   ```html
-   <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" />
-   ```
-5. Deploy and click **Verify** in Google Search Console.
-6. Submit your sitemap URL: `https://engineering-journal.pages.dev/sitemap-index.xml`.
+1. Push your latest code to your GitHub repository (`main` branch).
+2. Go to [vercel.com](https://vercel.com/) and sign in with your GitHub account.
+3. Click **Add New** &rarr; **Project** and import `engineering-journal`.
+4. Vercel automatically detects the **Next.js** framework preset.
+5. Keep default settings (`Build Command: npm run build`, `Output Directory: .next`).
+6. Click **Deploy**.
+7. Vercel will build the project and provide a live production URL (with automatic deployments on every future `git push`).
 
 ---
 
-## 10. Future Monetization Setup (Google AdSense)
+## 9. Future Improvements
 
-To prepare for future monetization without compromising editorial integrity:
-1. Write 20–30 high-quality, original articles.
-2. Ensure consistent organic traffic from search engines and community sharing.
-3. Apply for [Google AdSense](https://www.google.com/adsense/).
-4. Once approved, open `src/components/AdSlot.astro`:
-   - Set `isAdEnabled = true;`
-   - Insert your publisher ID: `const adsenseClient = 'ca-pub-XXXXXXXXXXXXXXXX';`
-5. Place `<AdSlot slotId="your-slot-id" />` in components or articles where desired.
+The following items represent potential future additions and are clearly distinguished from the completed features above:
 
----
-
-## 11. Author
-
-**Syed Mohammad Hamzah**  
-3rd-Year B.Tech Computer Science & Engineering Student  
-- GitHub: [@syedhamzah-dev](https://github.com/syedhamzah-dev)  
-- Email: [mohdhamzah1308@gmail.com](mailto:mohdhamzah1308@gmail.com)
+- [ ] **Newsletter Integration:** Adding a minimal email subscription box (e.g., Buttondown or Substack embed) for new article notifications.
+- [ ] **Interactive Visualizations:** Embedding interactive React charts (e.g., Chart.js or D3) for data analytics articles.
+- [ ] **Dark Mode Toggle:** Providing a manual switch between the warm editorial parchment theme and a soft charcoal dark mode.
+- [ ] **Custom Domain Setup:** Connecting a personal domain name (e.g., `hamzah.dev`).
+- [ ] **Monetization Introduction:** Enabling Google AdSense slots once the site reaches 25+ comprehensive original articles and consistent organic readership.
 
 ---
 
-## 12. License
+## 10. AI Assistance & Transparency
 
-This project is open-source under the [MIT License](LICENSE). Feel free to adapt the design system and architecture for your own personal writing journal.
+This website was developed with AI assistance through prompt-based pair programming using **Google Antigravity** as an AI-assisted development environment.
 
+Transparency and academic integrity are core principles of this publication. AI assistance was utilized where applicable for:
+- Initial project structure and directory architecture setup.
+- Frontend design and typography recommendations for an editorial reading experience.
+- Code generation and implementation of Next.js App Router components.
+- Migration from an initial Astro prototype to pure JavaScript Next.js.
+- Debugging and resolving framework-specific build issues.
+- Quality assurance testing and verification scripts.
+- Technical documentation structure and README preparation.
+
+### Author's Statement:
+- This is my personal engineering project.
+- AI tools served as developmental and coding assistants throughout the workflow.
+- I personally review, test, understand, and take full responsibility for the code and architecture published in this repository.
+- I am actively learning the technologies used across this stack (Next.js, React, JavaScript, and Data Science fundamentals).
+- All personal reflections, academic plans (such as GATE DA 2027 preparation), and learning insights represent my authentic personal journey.
+- Any future AI-assisted writing or research incorporated into articles will be thoroughly reviewed, validated, and explicitly disclosed.
+
+---
+
+## 11. License
+
+This project is licensed under the [MIT License](LICENSE).
