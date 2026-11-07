@@ -107,7 +107,7 @@ engineering-journal/
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/mohdhamzah1308/engineering-journal.git
+git clone https://github.com/syedhamzah-dev/engineering-journal.git
 cd engineering-journal
 
 # Install dependencies
@@ -224,7 +224,7 @@ cd "c:\Users\mohdh\Desktop\Projects\My Blog Website"
 # (Visit https://github.com/new and create "engineering-journal")
 
 # 3. Add the GitHub remote (replace with your GitHub URL)
-git remote add origin https://github.com/mohdhamzah1308/engineering-journal.git
+git remote add origin https://github.com/syedhamzah-dev/engineering-journal.git
 
 # 4. Set the branch to main and push
 git branch -M main
@@ -271,7 +271,7 @@ To prepare for future monetization without compromising editorial integrity:
 
 **Syed Mohammad Hamzah**  
 3rd-Year B.Tech Computer Science & Engineering Student  
-- GitHub: [@mohdhamzah1308](https://github.com/mohdhamzah1308)  
+- GitHub: [@syedhamzah-dev](https://github.com/syedhamzah-dev)  
 - Email: [mohdhamzah1308@gmail.com](mailto:mohdhamzah1308@gmail.com)
 
 ---
