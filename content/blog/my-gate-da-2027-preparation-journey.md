@@ -4,7 +4,7 @@ description: "Why I am preparing for the GATE Data Science and AI paper (GATE DA
 pubDate: 2026-01-15
 category: "Career and Learning"
 tags: ["gate-da", "gate-2027", "study-roadmap", "higher-education", "data-science", "integral-university"]
-draft: true
+draft: false
 author: "Syed Mohammad Hamzah"
 ---
 

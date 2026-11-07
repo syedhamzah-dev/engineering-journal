@@ -4,7 +4,7 @@ description: "The transition from passively following video tutorials to writing
 pubDate: "2025-10-28"
 category: "Programming"
 tags: ["python", "programming", "coding-foundations", "problem-solving"]
-draft: true
+draft: false
 author: "Syed Mohammad Hamzah"
 ---
 

@@ -4,7 +4,7 @@ description: "How wandering through web development, hackathons, and core comput
 pubDate: "2025-11-05"
 category: "My Engineering Journey"
 tags: ["engineering-domains", "web-development", "exploration", "hackathons", "learning-path"]
-draft: true
+draft: false
 author: "Syed Mohammad Hamzah"
 ---
 

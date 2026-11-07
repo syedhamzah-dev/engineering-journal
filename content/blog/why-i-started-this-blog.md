@@ -4,7 +4,7 @@ description: "Why I decided to document my journey as a 3rd-year B.Tech CSE stud
 pubDate: "2025-10-10"
 category: "My Engineering Journey"
 tags: ["engineering", "journal", "learning-in-progress", "reflections", "integral-university"]
-draft: true
+draft: false
 author: "Syed Mohammad Hamzah"
 ---
 
@@ -29,8 +29,7 @@ The internet is saturated with cookie-cutter tutorials. You can find thousands o
 
 I wanted an independent website that felt less like a promotional portfolio and more like a laboratory journal.
 
-> **Author Reflection Placeholder:**  
-> *[Author's Note: Add a personal reflection on what first motivated you to sit down and write this blog. Was there a specific moment during your 2nd or 3rd year—perhaps after a project deadline, a hackathon, or a challenging semester exam—when you decided you needed a dedicated place to write things down?]*
+The turning point for me arrived as I entered my third year. Between building our hackathon prototype ResourceBridge, navigating core computer science coursework at Integral University, and committing to prepare systematically for GATE DA 2027, I realized that passive study was no longer enough. I needed a structured system of personal accountability. Writing publicly forces me to break complex ideas down into simple terms, verify derivations, and honestly assess what I have truly mastered versus what I have merely skimmed.
 
 ---
 
@@ -55,9 +54,3 @@ Writing about your learning in public is inherently vulnerable. It means acknowl
 However, learning in public creates discipline. When you know an article will be read by peers, seniors, and mentors, you are forced to test your assumptions thoroughly before making claims.
 
 If you are a fellow engineering student or someone exploring data and computing from first principles, I hope these notes offer a grounded, authentic perspective.
-
----
-
-### Questions to Complete This Article:
-1. *What specific event or semester realization at Integral University made you decide to start documenting your journey publicly?*
-2. *Who do you hope to connect with through this blog (peers, mentors, study partners for GATE)?*

@@ -4,7 +4,7 @@ description: "An honest look at how moving from deterministic rules to pattern-l
 pubDate: 2025-11-26
 category: "Artificial Intelligence"
 tags: ["ai", "machine-learning", "curiosity", "mathematics", "learning-journey"]
-draft: true
+draft: false
 author: "Syed Mohammad Hamzah"
 ---
 

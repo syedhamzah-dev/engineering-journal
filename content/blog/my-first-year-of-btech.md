@@ -4,7 +4,7 @@ description: "Reflecting on the transition into engineering at Integral Universi
 pubDate: "2025-10-18"
 category: "My Engineering Journey"
 tags: ["btech", "first-year", "integral-university", "college-life", "reflections"]
-draft: true
+draft: false
 author: "Syed Mohammad Hamzah"
 ---
 

@@ -4,7 +4,7 @@ description: "A clear, conceptual guide distinguishing Data Science, Artificial 
 pubDate: 2025-12-08
 category: "Machine Learning"
 tags: ["data-science", "artificial-intelligence", "machine-learning", "definitions", "student-guide"]
-draft: true
+draft: false
 author: "Syed Mohammad Hamzah"
 ---
 

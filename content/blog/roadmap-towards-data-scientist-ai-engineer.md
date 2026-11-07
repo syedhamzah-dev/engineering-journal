@@ -4,7 +4,7 @@ description: "A student's evolving blueprint for navigating Data Science and AI:
 pubDate: 2026-02-01
 category: "Career and Learning"
 tags: ["career-roadmap", "ai-engineering", "data-science", "student-guide", "skills", "learning-journey"]
-draft: true
+draft: false
 author: "Syed Mohammad Hamzah"
 ---
 

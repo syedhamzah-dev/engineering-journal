@@ -4,7 +4,7 @@ description: "Why following tutorials is never enough: practical lessons in scop
 pubDate: 2025-12-20
 category: "Projects and Experiments"
 tags: ["projects", "hackathons", "resourcebridge", "flask", "python", "debugging", "learning-journey"]
-draft: true
+draft: false
 author: "Syed Mohammad Hamzah"
 ---
 
