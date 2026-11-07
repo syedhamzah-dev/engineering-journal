@@ -32,3 +32,4 @@ Because this is a personal engineering journal by Syed Mohammad Hamzah, external
 ## Article Content Notice
 
 New articles represent the personal learning reflections of the author. We do not accept sponsored guest posts or promotional submissions.
+

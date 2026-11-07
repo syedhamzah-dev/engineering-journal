@@ -279,3 +279,4 @@ To prepare for future monetization without compromising editorial integrity:
 ## 12. License
 
 This project is open-source under the [MIT License](LICENSE). Feel free to adapt the design system and architecture for your own personal writing journal.
+
