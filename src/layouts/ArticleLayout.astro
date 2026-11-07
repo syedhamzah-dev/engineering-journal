@@ -1,0 +1,538 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import ReadingProgressBar from '../components/ReadingProgressBar.astro';
+import CategoryBadge from '../components/CategoryBadge.astro';
+import ShareButtons from '../components/ShareButtons.astro';
+import TableOfContents, { type Heading } from '../components/TableOfContents.astro';
+import AdSlot from '../components/AdSlot.astro';
+import { formatDate } from '../utils/date';
+import { slugifyCategory } from '../utils/categories';
+
+export interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  category: string;
+  tags?: string[];
+  author?: string;
+  readingTime: string;
+  headings?: Heading[];
+  prevPost?: { title: string; slug: string };
+  nextPost?: { title: string; slug: string };
+  relatedPosts?: Array<{
+    title: string;
+    description: string;
+    slug: string;
+    pubDate: Date;
+    readingTime: string;
+  }>;
+}
+
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  category,
+  tags = [],
+  author = 'Syed Mohammad Hamzah',
+  readingTime,
+  headings = [],
+  prevPost,
+  nextPost,
+  relatedPosts = [],
+} = Astro.props;
+
+const currentUrl = Astro.url.href;
+const formattedPubDate = formatDate(pubDate);
+const formattedUpdatedDate = updatedDate ? formatDate(updatedDate) : null;
+const categorySlug = slugifyCategory(category);
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  article={true}
+  pubDate={pubDate}
+  updatedDate={updatedDate}
+  author={author}
+  category={category}
+  tags={tags}
+>
+  <ReadingProgressBar />
+
+  <article class="article-wrapper container-narrow">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="sep">/</span>
+      <a href="/blog">Articles</a>
+      <span class="sep">/</span>
+      <a href={`/blog/category/${categorySlug}`}>{category}</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="article-header">
+      <div class="header-meta">
+        <CategoryBadge category={category} />
+        <span class="meta-dot">&bull;</span>
+        <span class="reading-time">{readingTime}</span>
+      </div>
+
+      <h1 class="article-title">{title}</h1>
+
+      <p class="article-lead">{description}</p>
+
+      <div class="article-byline">
+        <div class="author-avatar" aria-hidden="true">
+          <span>SH</span>
+        </div>
+        <div class="byline-details">
+          <div class="author-name">
+            <a href="/about">{author}</a>
+          </div>
+          <div class="publication-dates">
+            <time datetime={pubDate.toISOString()}>Published on {formattedPubDate}</time>
+            {formattedUpdatedDate && (
+              <span class="updated-date"> &bull; Updated on {formattedUpdatedDate}</span>
+            )}
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Optional Table of Contents -->
+    {headings && headings.length > 0 && <TableOfContents headings={headings} />}
+
+    <!-- Main Markdown Body -->
+    <div class="article-content">
+      <slot />
+    </div>
+
+    <!-- Tags List -->
+    {tags && tags.length > 0 && (
+      <div class="article-tags-section">
+        <span class="tags-heading">Tags:</span>
+        <div class="tags-container">
+          {tags.map((tag) => (
+            <span class="article-tag">#{tag}</span>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Social Sharing -->
+    <ShareButtons title={title} url={currentUrl} />
+
+    <!-- Optional Future AdSense Slot -->
+    <AdSlot slotId="article-bottom-slot" format="auto" />
+
+    <!-- Author Callout Box -->
+    <aside class="author-callout">
+      <div class="callout-avatar" aria-hidden="true">
+        <span>SH</span>
+      </div>
+      <div class="callout-text">
+        <h4>About the Author</h4>
+        <p>
+          <strong>Syed Mohammad Hamzah</strong> is a 3rd-year B.Tech Computer Science and Engineering student. He is documenting his hands-on explorations in Data Science, Machine Learning, Artificial Intelligence, and his preparations for GATE DA 2027.
+        </p>
+        <p class="callout-sub">
+          Have feedback or spot a mistake in this article? Feel free to <a href="/contact">reach out</a>. Constructive critique helps everyone grow.
+        </p>
+      </div>
+    </aside>
+
+    <!-- Prev / Next Navigation -->
+    {(prevPost || nextPost) && (
+      <nav class="post-navigation" aria-label="Adjacent articles">
+        {prevPost ? (
+          <a href={`/blog/${prevPost.slug}`} class="nav-card prev-card">
+            <span class="nav-direction">&larr; Previous Article</span>
+            <span class="nav-title">{prevPost.title}</span>
+          </a>
+        ) : (
+          <div class="nav-card placeholder"></div>
+        )}
+
+        {nextPost ? (
+          <a href={`/blog/${nextPost.slug}`} class="nav-card next-card">
+            <span class="nav-direction">Next Article &rarr;</span>
+            <span class="nav-title">{nextPost.title}</span>
+          </a>
+        ) : (
+          <div class="nav-card placeholder"></div>
+        )}
+      </nav>
+    )}
+
+    <!-- Related Articles Section -->
+    {relatedPosts && relatedPosts.length > 0 && (
+      <section class="related-articles-section">
+        <h3 class="related-heading">Related Articles in {category}</h3>
+        <div class="related-grid">
+          {relatedPosts.map((post) => (
+            <div class="related-item">
+              <span class="related-date">{formatDate(post.pubDate)}</span>
+              <h4 class="related-title">
+                <a href={`/blog/${post.slug}`}>{post.title}</a>
+              </h4>
+              <p class="related-desc">{post.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+  </article>
+</BaseLayout>
+
+<style>
+  .article-wrapper {
+    padding-top: 1.5rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .breadcrumb a {
+    color: var(--text-muted);
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    color: var(--accent-base);
+  }
+
+  .breadcrumb .sep {
+    color: var(--border-strong);
+  }
+
+  .article-header {
+    margin-bottom: 2.75rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .header-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .meta-dot {
+    color: var(--border-strong);
+  }
+
+  .article-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .article-lead {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 1.75rem;
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
+
+  .article-byline {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+  }
+
+  .author-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--accent-subtle);
+    border: 1px solid var(--accent-border);
+    color: var(--accent-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+
+  .byline-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .author-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .author-name a {
+    color: var(--text-main);
+    text-decoration: none;
+  }
+
+  .author-name a:hover {
+    color: var(--accent-base);
+  }
+
+  .publication-dates {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  /* Article Content Styles */
+  .article-content {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text-main);
+  }
+
+  .article-content :global(h2) {
+    font-size: 1.75rem;
+    margin-top: 2.75rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .article-content :global(h3) {
+    font-size: 1.35rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .article-content :global(p) {
+    margin-bottom: 1.5rem;
+  }
+
+  .article-content :global(ul),
+  .article-content :global(ol) {
+    margin-bottom: 1.5rem;
+    padding-left: 1.75rem;
+  }
+
+  .article-content :global(li) {
+    margin-bottom: 0.5rem;
+  }
+
+  .article-content :global(blockquote) {
+    border-left: 3px solid var(--accent-base);
+    padding: 0.75rem 1.25rem;
+    margin: 2rem 0;
+    background-color: var(--bg-subtle);
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+  }
+
+  .article-tags-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-light);
+    flex-wrap: wrap;
+  }
+
+  .tags-heading {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .tags-container {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .article-tag {
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    color: var(--text-secondary);
+    background-color: var(--bg-subtle);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    border: 1px solid var(--border-light);
+  }
+
+  /* Author Callout */
+  .author-callout {
+    display: flex;
+    gap: 1.25rem;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 3rem 0;
+  }
+
+  .callout-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--accent-subtle);
+    border: 1px solid var(--accent-border);
+    color: var(--accent-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+
+  .callout-text h4 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    font-size: 1.05rem;
+    font-family: var(--font-sans);
+    font-weight: 600;
+  }
+
+  .callout-text p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    margin-bottom: 0.5rem;
+  }
+
+  .callout-sub {
+    font-size: 0.85rem !important;
+    color: var(--text-muted) !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Navigation Between Posts */
+  .post-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 3rem 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-light);
+  }
+
+  .nav-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1.25rem;
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+  }
+
+  .nav-card:hover {
+    border-color: var(--accent-border);
+    background-color: var(--accent-subtle);
+  }
+
+  .nav-direction {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: var(--accent-base);
+  }
+
+  .nav-title {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    color: var(--text-main);
+    line-height: 1.35;
+    font-weight: 500;
+  }
+
+  .nav-card.placeholder {
+    visibility: hidden;
+  }
+
+  /* Related Articles Section */
+  .related-articles-section {
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-light);
+  }
+
+  .related-heading {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .related-item {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    padding: 1.25rem;
+  }
+
+  .related-date {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+
+  .related-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+
+  .related-title a {
+    color: var(--text-main);
+    text-decoration: none;
+  }
+
+  .related-title a:hover {
+    color: var(--accent-base);
+  }
+
+  .related-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  @media (max-width: 640px) {
+    .article-title {
+      font-size: 1.95rem;
+    }
+    .post-navigation {
+      grid-template-columns: 1fr;
+    }
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+

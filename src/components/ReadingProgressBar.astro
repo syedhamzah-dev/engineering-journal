@@ -1,0 +1,56 @@
+---
+// Reading Progress Indicator (Fixed hairline progress bar at top of article page)
+---
+
+<div id="readingProgress" class="reading-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<script>
+  function updateProgress() {
+    const bar = document.getElementById('readingProgress');
+    if (!bar) return;
+    
+    const article = document.querySelector('article.article-content');
+    if (!article) {
+      bar.style.width = '0%';
+      return;
+    }
+
+    const rect = article.getBoundingClientRect();
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const articleTop = rect.top + scrollTop;
+    const articleHeight = rect.height;
+    const windowHeight = window.innerHeight;
+
+    const scrollDistance = scrollTop - articleTop;
+    const totalDistance = articleHeight - windowHeight;
+
+    if (scrollDistance <= 0) {
+      bar.style.width = '0%';
+      bar.setAttribute('aria-valuenow', '0');
+    } else if (scrollDistance >= totalDistance) {
+      bar.style.width = '100%';
+      bar.setAttribute('aria-valuenow', '100');
+    } else {
+      const percentage = Math.min(100, Math.max(0, (scrollDistance / totalDistance) * 100));
+      bar.style.width = `${percentage}%`;
+      bar.setAttribute('aria-valuenow', Math.round(percentage).toString());
+    }
+  }
+
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress, { passive: true });
+</script>
+
+<style>
+  .reading-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background-color: var(--accent-base);
+    z-index: 100;
+    transition: width 0.1s linear;
+  }
+</style>
+
