@@ -1,5 +1,5 @@
 ---
-title: "How I Started Exploring Programming"
+title: "How I Started Exploring Programming: Beyond Syntax to Problem-Solving"
 description: "The transition from passively following video tutorials to writing original code, overcoming the syntax trap, and why Python became my core language."
 pubDate: "2025-10-28"
 category: "Programming"
@@ -52,8 +52,7 @@ print("Running Averages:", calculate_running_average(sample_data))
 
 When you understand the data flow, the code becomes a direct translation of your thoughts rather than a guessing game.
 
-> **Author Reflection Placeholder:**  
-> *[Author's Note: What was the first programming language you were introduced to at Integral University (e.g., C, C++, or Python)? What was the first independent problem you solved where you had to figure out the logic completely on your own without looking at a solution?]*
+When I first encountered programming coursework at Integral University, our earliest labs centered on foundational syntax and procedural logic. Transitioning to writing small scripts entirely on my own—without reference solutions or guided prompts—was intimidating at first. The breakthrough came when I stopped trying to write complete code in one go and instead began sketching variable states and loop conditions on scrap paper before typing a single character.
 
 ---
 
@@ -77,10 +76,3 @@ As I continued practicing, a few simple habits helped me write cleaner and more 
 - **Refactor After It Works:** Getting code to run is only step one. Spend a few minutes renaming vague variables, adding comments where non-obvious logic exists, and removing unnecessary complexity.
 
 Programming is a craft that improves incrementally with consistent, thoughtful practice.
-
----
-
-### Questions to Complete This Article:
-1. *Which programming language did you learn first, and what was your experience transitioning to Python?*
-2. *What resource (a textbook, a specific website, or a YouTube series) was genuinely helpful when you were building your fundamentals?*
-3. *What is one common coding mistake you made repeatedly as a beginner that you now watch out for?*

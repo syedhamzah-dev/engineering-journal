@@ -99,17 +99,23 @@ export default function BlogListingClient({ initialPosts = [] }) {
       <div className="articles-container">
         {filteredPosts.length === 0 ? (
           <div className="no-articles">
-            <p>No articles matched your search. Try different keywords or clear the filter.</p>
-            <button
-              type="button"
-              className="btn btn-outline"
-              onClick={() => {
-                setSearchQuery('');
-                setSelectedCategory('all');
-              }}
-            >
-              Reset Filters
-            </button>
+            {initialPosts.length === 0 ? (
+              <p>New articles are currently being finalized. Please check back soon!</p>
+            ) : (
+              <>
+                <p>No articles matched your search query or category filter.</p>
+                <button
+                  type="button"
+                  className="btn btn-outline"
+                  onClick={() => {
+                    setSearchQuery('');
+                    setSelectedCategory('all');
+                  }}
+                >
+                  Reset Filters
+                </button>
+              </>
+            )}
           </div>
         ) : (
           <div className="articles-feed">

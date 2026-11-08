@@ -52,14 +52,4 @@ My goal right now is not to chase every weekly library release, but to build str
 
 ---
 
-> ### Author Reflection Placeholder
-> 
-> *[Author's Note: Add a personal reflection describing the exact moment, resource, or project where you first realized you wanted to focus on AI and Machine Learning rather than general software development. Was it a specific lecture at Integral University, a video (such as 3Blue1Brown or Andrew Ng), or a problem you ran into while writing standard code?]*
-
----
-
-### Questions to Complete This Article
-
-1. Was there a particular online course, YouTube explanation (e.g., Andrew Ng, 3Blue1Brown, StatQuest), or university lecture that first made machine learning concepts click for you?
-2. What was the first machine learning concept or algorithm (e.g., linear regression, decision trees, gradient descent) that you tried to understand mathematically?
-3. How do you currently balance your interest in AI/ML theory with the practical programming skills required for your regular coursework?
+The turning point arrived during my second year when I first saw how gradient descent iteratively minimizes error on a loss surface. Watching a mathematical optimization algorithm adjust parameters to fit a curve—rather than manually hardcoding logic—made the connection between linear algebra, calculus, and computing come alive. That blend of rigorous math and practical code convinced me to dedicate my studies to machine learning.

@@ -1,5 +1,5 @@
 ---
-title: "My Experience Building Technical Projects"
+title: "Building Technical Projects as a Student: Practical Lessons from ResourceBridge"
 description: "Why following tutorials is never enough: practical lessons in scoping, debugging, and teamwork from building ResourceBridge at a hackathon."
 pubDate: 2025-12-20
 category: "Projects and Experiments"
@@ -83,14 +83,4 @@ Acknowledging where a project currently stands is part of honest engineering. Bu
 
 ---
 
-> ### Author Reflection Placeholder
-> 
-> *[Author's Note: Add a personal reflection on your experience during the hackathon. Mention your specific role on the team (e.g., backend logic, UI design, connecting Flask routes), any memorable bug you stayed up late to solve, and the feedback your team received from mentors or judges.]*
-
----
-
-### Questions to Complete This Article
-
-1. What specific role did you handle while building ResourceBridge (e.g., Flask backend routes, template integration, CSS styling, or JavaScript interactions)?
-2. What was the trickiest bug you and your team ran into during the hackathon, and how did you resolve it?
-3. How has building ResourceBridge influenced how you approach your current personal projects or coursework at Integral University?
+During the hackathon, my primary focus was on writing backend Flask routes and handling incoming form payloads while coordinating with teammates on the HTML/CSS templates. The late-night debugging session where we chased an unhandled routing error fifteen minutes before submissions taught me more about defensive programming and calm troubleshooting than weeks of passive reading. That project gave me genuine confidence in building working software under constraints.

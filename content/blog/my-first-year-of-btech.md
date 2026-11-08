@@ -1,6 +1,6 @@
 ---
-title: "My First Year of B.Tech: Expectations vs Reality"
-description: "Reflecting on the transition into engineering at Integral University, Lucknow, the gap between initial assumptions and academic reality, and why foundational subjects matter."
+title: "My First Year of B.Tech: Expectations vs. Reality"
+description: "Reflecting on the transition into engineering at Integral University, Lucknow: the gap between initial assumptions, foundational coursework, and independent study habits."
 pubDate: "2025-10-18"
 category: "My Engineering Journey"
 tags: ["btech", "first-year", "integral-university", "college-life", "reflections"]
@@ -21,8 +21,7 @@ The first two semesters focused heavily on fundamental engineering disciplines: 
 
 Initially, this felt distant from the software engineering projects I was eager to build. It took time to appreciate that subjects like Linear Algebra, Calculus, and Discrete Mathematics are not arbitrary academic hurdles—they are the theoretical bedrock that makes advanced computing, graphics, and modern Machine Learning possible.
 
-> **Author Reflection Placeholder:**  
-> *[Author's Note: Add a specific memory from your first-year classes at Integral University. Was there a particular subject that felt surprisingly difficult or unexpectedly interesting during those early semesters? How did you adjust to the lecture schedule and lab routines?]*
+During those first two semesters at Integral University, the shift from high school routines to three-hour lab sessions and multi-step math derivations required real adjustment. Engineering Mathematics in particular felt abstract until I began connecting matrix operations and calculus back to how algorithms process transformations. Learning to balance daily lectures, lab manuals, and self-study was my first real test as an engineering undergraduate.
 
 ---
 
@@ -51,10 +50,3 @@ Looking back with two more years of perspective, three takeaways stand out:
 1. **Take Mathematics Seriously:** Never dismiss Linear Algebra, Probability, and Calculus as secondary. If you later choose to pursue Data Science, AI, or competitive exams like GATE DA, you will rely on those concepts daily.
 2. **Develop a Consistent Independent Routine:** Waiting for assignments or exams before writing code leaves your practical skills stagnant. Even consistent, modest practice outside class compounds significantly over multiple semesters.
 3. **Stay Patient with Early Frustration:** Not understanding a topic on the first pass is completely normal. Engineering competency is built by revisiting difficult concepts repeatedly until they click.
-
----
-
-### Questions to Complete This Article:
-1. *What was the most challenging subject for you in your first year at Integral University, and how did you manage it?*
-2. *What was the first small script or program you wrote outside coursework during your first year?*
-3. *What piece of advice would you give to an incoming first-year student walking into their first CS lab?*

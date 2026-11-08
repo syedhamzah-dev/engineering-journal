@@ -20,7 +20,7 @@ export default function AboutPage() {
       <div className="about-content">
         <section className="bio-intro">
           <p>
-            Hello and welcome. I am <strong>Syed Mohammad Hamzah</strong>, currently a third-year undergraduate student pursuing a Bachelor of Technology (B.Tech) in <strong>Computer Science and Engineering</strong>.
+            Hello and welcome. I am <strong>Syed Mohammad Hamzah</strong>, currently a third-year undergraduate student pursuing a Bachelor of Technology (B.Tech) in <strong>Computer Science and Engineering</strong> at Integral University, Lucknow.
           </p>
           <p>
             I started this website not to present myself as a seasoned industry veteran or a guru with all the answers, but to create an authentic, public record of my education. In an age where social media incentivizes performative expertise, I believe there is immense value in showing the unvarnished reality of learning complex technical fields from the ground up.
@@ -107,6 +107,14 @@ export default function AboutPage() {
               className="btn btn-outline"
             >
               GitHub (@syedhamzah-dev)
+            </a>
+            <a
+              href="https://www.linkedin.com/in/syedmohdhamzah/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline"
+            >
+              LinkedIn Profile
             </a>
             <Link href="/blog" className="btn btn-outline">
               Read the Blog

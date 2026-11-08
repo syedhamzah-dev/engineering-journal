@@ -57,7 +57,7 @@ export default function ContactPage() {
 
             <div className="channel-item">
               <span className="channel-label">Academic Profile:</span>
-              <span className="channel-text">3rd Year B.Tech CSE &bull; India</span>
+              <span className="channel-text">3rd Year B.Tech CSE &bull; Integral University, Lucknow</span>
             </div>
           </div>
 

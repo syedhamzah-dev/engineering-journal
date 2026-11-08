@@ -1,6 +1,6 @@
 ---
-title: "Why I Started This Blog: My Engineering Journey"
-description: "Why I decided to document my journey as a 3rd-year B.Tech CSE student at Integral University, Lucknow, exploring programming, Data Science, AI, and GATE DA 2027."
+title: "Why I Started Beyond the Algorithm: Notes from an Engineering Journey"
+description: "Why I founded Beyond the Algorithm to document my journey as a 3rd-year B.Tech CSE student at Integral University exploring programming, Data Science, AI, and preparation for GATE DA 2027."
 pubDate: "2025-10-10"
 category: "My Engineering Journey"
 tags: ["engineering", "journal", "beyond-the-algorithm", "reflections", "integral-university"]

@@ -1,5 +1,5 @@
 ---
-title: "My Roadmap Towards Becoming a Data Scientist or AI Engineer"
+title: "Exploring Data Science and AI Engineering: My Learning Roadmap"
 description: "A student's evolving blueprint for navigating Data Science and AI: distinguishing the skills I have practiced, what I am learning now, and what lies ahead."
 pubDate: 2026-02-01
 category: "Career and Learning"
@@ -93,14 +93,4 @@ This roadmap is an evolving document. As I learn, build projects, and prepare fo
 
 ---
 
-> ### Author Reflection Placeholder
-> 
-> *[Author's Note: Add a personal reflection on which specific topic in "Stage 2: Active Current Focus" you are dedicating the most time to this month. What project or study resource are you currently using to bridge the gap between Python programming and data analysis?]*
-
----
-
-### Questions to Complete This Article
-
-1. Which specific topic or library in your current learning stage (e.g., NumPy array manipulation, Pandas data wrangling, or Linear Algebra math) are you finding most challenging right now?
-2. What is the next hands-on mini-project or dataset analysis you plan to build to put your EDA or Python data skills to the test?
-3. What is one habit or routine that helps you avoid feeling overwhelmed by the massive number of new AI frameworks being announced?
+Currently, my day-to-day focus is heavily anchored in Stage 2: working through multivariable calculus and linear algebra derivations for GATE DA while solidifying practical data analysis in Pandas. Taking the time to understand vector broadcasting and matrix operations mathematically—rather than just running high-level library functions—has given me a much more grounded perspective on how predictive models actually operate.

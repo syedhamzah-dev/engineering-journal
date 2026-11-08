@@ -1,5 +1,5 @@
 ---
-title: "My GATE DA 2027 Preparation Journey"
+title: "Preparing for GATE DA 2027: Syllabus Breakdown, Strategy, and Accountability"
 description: "Why I am preparing for the GATE Data Science and AI paper (GATE DA 2027), breaking down the syllabus, and my plan to begin focused preparation in December 2026."
 pubDate: 2026-01-15
 category: "Career and Learning"
@@ -84,14 +84,4 @@ Documenting the process publicly keeps me consistent and hopefully provides a re
 
 ---
 
-> ### Author Reflection Placeholder
-> 
-> *[Author's Note: Add details about your specific daily study schedule, the primary reference books or coaching/online resources (e.g., NPTEL, GO Classes, Made Easy, or self-study textbooks) you plan to use starting December 2026, and how you plan to balance your 6th-semester coursework at Integral University.]*
-
----
-
-### Questions to Complete This Article
-
-1. What specific reference materials, textbooks, or online platforms (such as NPTEL or specific GATE DA courses) are you planning to use when your focused preparation begins in December 2026?
-2. Which section of the GATE DA syllabus (e.g., Linear Algebra, Probability, DBMS, or ML) do you feel most comfortable with, and which area do you expect will require the most effort?
-3. How do you plan to structure your daily timetable during active college weeks at Integral University to ensure consistent study time?
+Balancing university coursework at Integral University with dedicated exam preparation requires realistic pacing. My strategy is to dedicate morning hours to primary theoretical derivations—working through Gilbert Strang's linear algebra lectures and standard probability references—while using evenings for coursework and programming assignments. By starting my focused preparation in December 2026, I have a clear, multi-semester runway leading up to the February 2027 exam.

@@ -1,6 +1,6 @@
 ---
-title: "The Different Technology Domains I Explored"
-description: "How wandering through web development, hackathons, and core computer science subjects helped me discover my genuine interest in Data Science and AI."
+title: "Technology Domains I Explored Before Finding My Focus"
+description: "How exploring web development, hackathons, and database systems helped me discover a genuine focus in Data Science and Machine Learning."
 pubDate: "2025-11-05"
 category: "My Engineering Journey"
 tags: ["engineering-domains", "web-development", "exploration", "hackathons", "learning-path"]
@@ -29,8 +29,7 @@ This exploration became especially practical when participating in hackathons. D
 
 Building web applications was rewarding, but as I worked on them, I noticed where my curiosity naturally drifted: I was less drawn to tweaking UI animations or complex CSS layouts, and far more interested in how data was structured, queried, validated, and processed behind the scenes.
 
-> **Author Reflection Placeholder:**  
-> *[Author's Note: What was your initial experience when preparing for your first hackathon? How did your team decide on the idea for ResourceBridge, and what specific part of the project did you enjoy working on most?]*
+Collaborating on ResourceBridge during a hackathon was an eye-opener. Working through the night to connect our Flask endpoints to the front-end forms, managing git merges, and ensuring user requests properly updated our data records showed me how different domains interact. More importantly, it clarified that while I enjoyed building functional web tools, the data flow and backend analytical logic were what truly captured my attention.
 
 ---
 
@@ -63,10 +62,3 @@ I am glad I spent time exploring web technologies and participating in hackathon
 - **It removed FOMO (Fear of Missing Out):** Because I tested different areas firsthand, my choice to focus on Data Science and AI is grounded in real interest rather than industry buzzwords.
 
 In the next article, I will break down how I first began studying Data Science concepts systematically.
-
----
-
-### Questions to Complete This Article:
-1. *What other technologies or mini-experiments did you try during your first and second years before focusing on Data Science?*
-2. *What was the most surprising thing you learned while building ResourceBridge during the hackathon?*
-3. *How did your perspective on computer science change between your first semester and your third year?*

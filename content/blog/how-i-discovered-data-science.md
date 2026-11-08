@@ -1,5 +1,5 @@
 ---
-title: "How I Discovered Data Science"
+title: "How I Discovered Data Science: From Code to Questions"
 description: "Why exploratory data analysis, statistics, and uncovering patterns in raw data made Data Science stand out as an exciting area of study."
 pubDate: "2025-11-15"
 category: "Data Science"
@@ -61,8 +61,7 @@ print(check_data_quality(sample_data))
 
 This diagnostic step reminds you that code is only as reliable as the data feeding into it.
 
-> **Author Reflection Placeholder:**  
-> *[Author's Note: What was the first dataset you actually explored or downloaded to practice with—e.g., student grade records, housing prices on Kaggle, sports statistics, or a dataset from an online course? What patterns did you try to discover, and what surprised you about the data?]*
+When I first started experimenting with tabular data in Pandas, inspecting real distributions was humbling. Seeing how quickly missing entries, mismatched datatypes, and outliers can skew basic descriptive statistics made me realize why exploratory analysis is so critical. Writing code to systematically clean data and verify basic assumptions changed how I look at software problems.
 
 ---
 
@@ -84,10 +83,3 @@ The most important conceptual takeaway from my early data exploration was the ti
 If data collection is biased, if columns are improperly defined, or if critical confounding variables are missing, even the most advanced neural network will simply learn and amplify those errors.
 
 This taught me intellectual humility. Data Science is not about rushing to run complex models; it is about treating data with respect, validating assumptions, and communicating honest findings clearly.
-
----
-
-### Questions to Complete This Article:
-1. *Which specific dataset did you first experiment with using pandas, and what did you learn from it?*
-2. *Which concept in statistics (e.g., standard deviation, correlation, p-values, or distributions) was hardest to grasp initially, and how did code help you understand it?*
-3. *What data visualization tool or plot type gave you your first "aha!" moment when exploring data?*

@@ -1,5 +1,5 @@
 ---
-title: "Understanding Data Science vs AI vs ML"
+title: "Data Science, AI, and Machine Learning: Understanding the Overlap"
 description: "A clear, conceptual guide distinguishing Data Science, Artificial Intelligence, and Machine Learning from the perspective of an engineering student."
 pubDate: 2025-12-08
 category: "Machine Learning"
@@ -112,14 +112,4 @@ For my own journey, understanding these distinctions has helped me focus my stud
 
 ---
 
-> ### Author Reflection Placeholder
-> 
-> *[Author's Note: Add a personal reflection on which of these three areas currently excites you the most as a 3rd-year student at Integral University. Was there a specific project, coursework topic, or article that helped you realize whether you lean more towards data exploration, mathematical ML, or broad AI applications?]*
-
----
-
-### Questions to Complete This Article
-
-1. Between data analysis (finding insights in messy data) and machine learning (training predictive models), which aspect do you find yourself enjoying more when working on projects?
-2. Did any course at Integral University (such as DBMS, Discrete Mathematics, or Probability) help clarify how these fields differ?
-3. What is one common misconception about AI or Data Science that you frequently hear from peers or online that you think needs debunking?
+For me as a student, understanding this taxonomy brought immediate relief. Instead of feeling pressured to master every trendy deep learning library or buzzword, I could see that the common foundation across all three domains is solid mathematical literacy and clean programming. Whether I am writing SQL queries to investigate data anomalies or studying cost functions for predictive modeling, grounding myself in fundamentals is what truly matters.

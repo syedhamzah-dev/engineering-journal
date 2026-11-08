@@ -19,12 +19,12 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="hero-section container">
         <div className="hero-inner">
-          <div className="hero-badge">Independent Technology Publication &bull; By Syed Mohammad Hamzah</div>
+          <div className="hero-badge">Independent Technology Publication &bull; Personal Engineering &amp; Data Journal</div>
           <h1 className="hero-title">
             Exploring Data, Artificial Intelligence, Machine Learning and the ideas behind them.
           </h1>
           <p className="hero-description">
-            Welcome to <strong>Beyond the Algorithm</strong>. An independent publication by <strong>Syed Mohammad Hamzah</strong> documenting concepts, projects, experiments, and technical foundations in Data Science, Artificial Intelligence, Machine Learning, and software engineering.
+            Welcome to <strong>Beyond the Algorithm</strong>, an independent publication by <strong>Syed Mohammad Hamzah</strong>—a 3rd-year Computer Science student documenting concepts, projects, experiments, mathematical foundations, and ongoing learning across Data Science, Artificial Intelligence, Machine Learning, and software engineering.
           </p>
           <div className="hero-actions">
             <Link href="/blog" className="btn btn-primary">
